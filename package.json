@@ -1,0 +1,19 @@
+{
+  "name": "style-resources-loader",
+  "version": "1.0.0",
+  "description": "node6 compatible version of style-resources-loader",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phlogisticfugu/style-resources-loader-node6.git"
+  },
+  "author": "Brad Ito <phlogisticfugu@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/phlogisticfugu/style-resources-loader-node6/issues"
+  },
+  "homepage": "https://github.com/phlogisticfugu/style-resources-loader-node6#readme"
+}
