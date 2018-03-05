@@ -2,7 +2,10 @@
   "name": "style-resources-loader",
   "version": "1.0.0",
   "description": "node6 compatible version of style-resources-loader",
-  "main": "index.js",
+  "engines": {
+    "node": ">=6.10"
+  },
+  "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +18,36 @@
   "bugs": {
     "url": "https://github.com/phlogisticfugu/style-resources-loader-node6/issues"
   },
-  "homepage": "https://github.com/phlogisticfugu/style-resources-loader-node6#readme"
+  "homepage": "https://github.com/phlogisticfugu/style-resources-loader-node6#readme",
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "loose": true,
+          "targets": {
+            "node": "6.10"
+          }
+        }
+      ]
+    ],
+    "plugins": [
+      [
+        "transform-runtime",
+        {
+          "helpers": true,
+          "polyfill": true,
+          "regenerator": true,
+          "mooduleName": "babel-runtime"
+        }
+      ]
+    ]
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "shelljs": "^0.8.1",
+    "style-resources-loader": "1.0.0"
+  }
 }
